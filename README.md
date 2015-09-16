@@ -1,7 +1,7 @@
-moon-me BRS challenge
+Moon-me BRS challenge
+My progress after 2 hours
 
 Download
-Run bower install
-
-You'll also need to install polyserve
-moon-me is the 2nd option in the dropdown
+1) `bower install`
+2) If you haven't yet, `npm install -g polyserve`
+3) moon-me is the 2nd option in the dropdown
