@@ -1,4 +1,4 @@
-paper-date-picker
+moon-me
 =================
 Material Design date picker, compatible with *Polymer 1.0*
 
@@ -7,7 +7,7 @@ component aims to be a clone of the date picker introduced in Android Lollipop.
 
 ![wide picker screenshot][wide] ![narrow picker screenshot][narrow]
 
-See the [component page](http://bendavis78.github.io/paper-date-picker/) for 
+See the [component page](http://bendavis78.github.io/moon-me/) for 
 full documentation.
 
 ## Example usage:
@@ -15,21 +15,21 @@ full documentation.
 Default picker:
 
 ```html
-<paper-date-picker></paper-date-picker>
+<moon-me></moon-me>
 ```
 
 Setting the initial date to April 20, 2015:
 
 ```html
-<paper-date-picker date="2014-04-20"></paper-date-picker>
+<moon-me date="2014-04-20"></moon-me>
 ```
 
 If you include this element as part of `paper-dialog`, use the class
-`"paper-date-picker-dialog"` on the dialog in order to give it proper styling.
+`"moon-me-dialog"` on the dialog in order to give it proper styling.
 
 ```html
-    <paper-action-dialog id="dialog" modal class="paper-date-picker-dialog">
-      <paper-date-picker id="datePicker"></paper-date-picker>
+    <paper-action-dialog id="dialog" modal class="moon-me-dialog">
+      <moon-me id="datePicker"></moon-me>
       <div class="buttons">
         <paper-button dialog-dismiss>Cancel</paper-button>
         <paper-button dialog-confirm>OK</paper-button>

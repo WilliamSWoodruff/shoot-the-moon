@@ -1,5 +1,5 @@
 {
-  "name": "paper-date-picker",
+  "name": "moon-me",
   "version": "1.0.3",
   "description": "Provides a responsive date picker based on the material design spec",
   "main": "index.html",
@@ -23,20 +23,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bendavis78/paper-date-picker.git"
+    
   },
   "keywords": [
     "web-component",
     "webcomponents",
     "polymer",
     "datepicker",
-    "paper-date-picker"
+    "moon-me"
   ],
-  "author": "Ben Davis <bendavis78@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bendavis78/paper-date-picker/issues"
-  },
-  "homepage": "https://github.com/bendavis78/paper-date-picker#readme"
 }

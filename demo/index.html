@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
 
-  <title>paper-date-picker Demo</title>
+  <title>moon-me Demo</title>
   
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-  <link rel="import" href="../paper-date-picker.html">
-  <link rel="import" href="../../paper-styles/paper-styles.html">
-  <link rel="import" href="../../paper-dialog/paper-dialog.html">
-  <link rel="import" href="../../paper-button/paper-button.html">
+  <link rel="import" href="../moon-me.html">
+  <link rel="import" href="../bower_components/paper-styles/paper-styles.html">
+  <link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+  <link rel="import" href="../bower_components/paper-button/paper-button.html">
 
   <style is="custom-style">
     html /deep/ * {
@@ -33,28 +33,14 @@
   <template is="dom-bind" id="scope">
     <section>
       <h1>{{dateFormat(date, 'LL')}}</h1>
-      <paper-button class="btn" on-tap="showDialog" raised>Change Date</paper-button>
-      <paper-dialog id="dialog" class="paper-date-picker-dialog" modal on-iron-overlay-closed="dismissDialog">
-        <paper-date-picker id="picker" responsive-width="655px"></paper-date-picker>
-        <div class="buttons">
-          <paper-button dialog-dismiss>Cancel</paper-button>
-          <paper-button dialog-confirm>OK</paper-button>
-        </div>
-      </paper-dialog>
+      <moon-me id="picker" responsive-width="655px"></moon-me>
     </section>
   </template>
   <script>
+    
     document.addEventListener('WebComponentsReady', function() {
       var scope = Polymer.dom(document).querySelector('#scope');
       scope.dateFormat = scope.$.picker.dateFormat;
-      scope.dismissDialog = function(event) {
-        if (event.detail.confirmed) {
-          scope.date = scope.$.picker.date;
-        }
-      };
-      scope.showDialog = function() {
-        this.$.dialog.toggle();
-      };
       scope.date = new Date();
     });
 

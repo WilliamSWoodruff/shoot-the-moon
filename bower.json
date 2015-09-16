@@ -1,5 +1,5 @@
 {
-  "name": "paper-date-picker",
+  "name": "moon-me",
   "version": "1.0.3",
   "authors": [
     "Ben Davis <bendavis78@gmail.com>"
@@ -10,11 +10,11 @@
     "web-components",
     "polymer",
     "datepicker",
-    "paper-date-picker"
+    "moon-me"
   ],
-  "main": "paper-date-picker.html",
+  "main": "moon-me.html",
   "license": "MIT",
-  "homepage": "http://bendavis78.github.io/paper-date-picker/",
+  "homepage": "http://bendavis78.github.io/moon-me/",
   "ignore": [
     "/.*",
     "/tests/"
